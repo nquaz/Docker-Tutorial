@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "my-package"
+version = "0.1.0"
+description = "Solves the brain"
+authors = [
+    {name = "Jane Doe"}
+]
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "cowsay"
+]
+
+[project.optional-dependencies]
+dev = [
+    "jupytext (>=1.17.2,<2.0.0)"
+]
