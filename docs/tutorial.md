@@ -39,7 +39,7 @@ Let's take a look inside the Dockerfile to understand its anatomy. The Dockerfil
 
 The rest of the Dockerfile consists of additional instructions that usually follow this structure: create a working directory inside the container > move your local files to the container (local filepaths should be relative to the directory the Dockerfile lives in) > build tools necessary for development ie. install packages, download repos, create conda environments, etc. You can read the Dockerfile comments for more details, especially if you plan to design your own Dockerfile at some point. These are quite versatile files capable of generating multiple types of images from the same file, and ChatGPT is your friend :).
 
-To build the image, run the following in terminal, replacing the placeholder with a name:
+To build the image, make sure you are in the same directory as the Dockerfile and run the following in terminal, replacing the placeholder with a name:
 
 ```
 docker build -t <image_name> .
